@@ -1,33 +1,82 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock paper scissor</title>
+    <title>rock paper scissor game</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/games.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <section class="game">
-        <div class="headers">
-            <div id="header">&copy; <a href="#">GraceGitau</a></header></div>
-            <div id="header2">computer 0 0 player </div>
+    <div class="game-container">
+        <div class="game-header">
+            <div class="game-header-items">
+                <p>&copy;  2024 </p>
+            <a href="#" style="color: blue;">Grace Gitau </a>
+            </div>
+            <div class="game-score-header">
+                <div class="computer-score">
+                    <p>computer   </p>
+                    <p class="computer-count ">0</p>
+                </div>
+                <div class="player-score">
+                    <p class="player-count">0</p>
+                    <p>player</p>
+                </div>
+    
+            </div>
         </div>
-        <div class="play" id="comp">
-            <h3>computer</h3>
-        <div id="emoji">✌</div>
+        
+        <div class="computer-display">
+            <h3 class="computer-title" id="computers-choice">computer</h3>
+            <div class="game-icon">
+                <div class="computer-dispay-choice">
+                </div>
+            </div>
         </div>
+  
         <div class="result">
-            <h2>result</h2>
+            
         </div>
-        <div class="play" id="player">
-            <h3>player</h3>
-            <div id="player-emoji">✌</div>
+
+      
+
+        <div class="player-display">
+            <h3 class="player-title" id="player-choice">player</h3>
+            <div class="game-icon">
+                <div class="player-dispay-choice">
+                </div>
+            </div>
         </div>
-        <div class="choices">
-            <button>✊</button>
-            <button>🖐 </button>
-            <button>✌ </button>
+       
+        <div class="choices" id="choices-win">
+            <button onclick="playgame('rock')" class="btn-game" id="game-icons-btn">
+                <div class="icon-choices">
+                    <span style="font-size:3rem">&#9994;</span>
+                    <p>rock</p>
+                </div>
+            </button>
+
+            <button  onclick="playgame('paper')"class="btn-game"> 
+                <div class="icon-choices">
+                    <span style='font-size:3rem;'>&#9995;</span>
+                    <p>paper</p>
+                </div>
+            </button>
+
+            <button  onclick="playgame('scissor')"class="btn-game" > 
+                <div class="icon-choices">
+                    <span style="font-size:3rem;">&#9996;</span> 
+                    <p>scissors</p>
+                </div>   
+             </button> 
+             
         </div>
-    </section>
+
+    </div>
+    <script  type="text/javascript" src="app.js"></script>
 </body>
 </html>
