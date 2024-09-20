@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0  auto;
+    box-sizing: border-box;
+    
+}
+
+
+.headers{
+
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+
+}
+
+
+body{
+    background-color: yellowgreen;
+}
+#comp, #player{
+    width: max-content;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+#computer-emoji, #player-emoji{
+    width: 100px;
+    height: 100px;
+    border: 2px dashed black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  
+}
+.result{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-top: 40px;
+   background-color: yellow;
+}
+.choices{
+    width: max-content;
+    margin: 0auto;
+    padding: 5px;
+    height: 50vh;
+   
+    
+}
